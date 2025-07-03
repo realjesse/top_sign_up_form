@@ -1,0 +1,131 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+/* Josh Comeau Reset complete */
+
+body {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url("Norse-Bold.otf") format("opentype");
+}
+
+.main-container {
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.horizontal {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.center {
+    align-items: center;
+}
+
+.centered {
+    justify-content: center;
+}
+
+.relative {
+    position: relative;
+}
+
+a {
+    color: white;
+}
+
+.left-column {
+    flex-grow: 1;
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+
+.right-column {
+    flex-grow: 2;
+}
+
+.logo {
+    padding: 10px 0px;
+    margin-top: 30%;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.logo h1 {
+    font-family: norse-bold;
+    font-size: 5rem;
+    line-height: 0;
+    font-weight: 300;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 15px;
+}
