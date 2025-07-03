@@ -57,11 +57,24 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
 }
 
 @font-face {
     font-family: norse-bold;
     src: url("Norse-Bold.otf") format("opentype");
+}
+
+form {
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+input {
+    appearance: none;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #E5E7EB;
 }
 
 .main-container {
@@ -97,7 +110,7 @@ a {
 }
 
 .left-column {
-    flex-grow: 1;
+    flex: 1;
     background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -106,7 +119,8 @@ a {
 }
 
 .right-column {
-    flex-grow: 2;
+    flex: 2;
+    background-color: rgb(240, 240, 240);
 }
 
 .logo {
@@ -128,4 +142,60 @@ a {
     bottom: 0px;
     width: 100%;
     padding: 15px;
+}
+
+.hook p {
+    max-inline-size: 45ch;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.right-column h3 {
+    font-size: 1.5rem;
+}
+
+.right-column > :not(form) {
+    padding: 0px 45px;
+}
+
+.form-container h3 {
+    background-color: white;
+}
+
+.input-container label {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.input-row-container {
+    gap: 75px;
+}
+
+button[type="submit"] {
+    width: 180px;
+    height: 40px;
+    color: white;
+    font-weight: 600;
+    border: 0;
+    background-color: #596D48;
+    border-radius: 5px;
+    margin: 0px 45px;
+}
+
+.login-container a {
+    color: #596D48;
+    text-decoration: none;
+}
+
+.login-container {
+    font-weight: 600;
+}
+
+.master-input-container {
+    background-color: white;
+    padding: 30px 45px;
+    gap: 20px;
 }
